@@ -38,5 +38,17 @@ namespace OgrenciBilSis
             frmDersIslemleri dersIslemleri = new frmDersIslemleri();
             dersIslemleri.Show();
         }
+
+        private void btnOgrenciIslemleri_Click(object sender, EventArgs e)
+        {
+            frmOgrenciIslemleri ogrenciIslemleri = new frmOgrenciIslemleri();
+            ogrenciIslemleri.Show();
+        }
+
+        private void btnSinavNotlari_Click(object sender, EventArgs e)
+        {
+            frmSinavNotlari sinavNotlari = new frmSinavNotlari();
+            sinavNotlari.Show();
+        }
     }
 }

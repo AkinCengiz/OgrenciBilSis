@@ -43,6 +43,7 @@ namespace OgrenciBilSis
         private void btnEkle_Click(object sender, EventArgs e)
         {
             ds.DersEkle(txtDersAd.Text);
+            Listele(ds);
         }
 
         private void btnListele_Click(object sender, EventArgs e)

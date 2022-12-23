@@ -67,6 +67,7 @@
             // 
             this.lblOgrenci.AutoSize = true;
             this.lblOgrenci.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOgrenci.ForeColor = System.Drawing.Color.White;
             this.lblOgrenci.Location = new System.Drawing.Point(155, 247);
             this.lblOgrenci.Name = "lblOgrenci";
             this.lblOgrenci.Size = new System.Drawing.Size(67, 18);
@@ -77,6 +78,7 @@
             // 
             this.lblOgretmen.AutoSize = true;
             this.lblOgretmen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOgretmen.ForeColor = System.Drawing.Color.White;
             this.lblOgretmen.Location = new System.Drawing.Point(384, 247);
             this.lblOgretmen.Name = "lblOgretmen";
             this.lblOgretmen.Size = new System.Drawing.Size(82, 18);
@@ -87,6 +89,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(195, 298);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 18);
@@ -95,8 +98,9 @@
             // 
             // txtId
             // 
-            this.txtId.BackColor = System.Drawing.Color.Green;
+            this.txtId.BackColor = System.Drawing.Color.SeaGreen;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtId.ForeColor = System.Drawing.Color.White;
             this.txtId.Location = new System.Drawing.Point(283, 291);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(147, 29);

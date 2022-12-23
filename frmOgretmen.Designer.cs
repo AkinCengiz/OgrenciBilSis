@@ -95,6 +95,7 @@
             this.btnSinavNotlari.TabIndex = 4;
             this.btnSinavNotlari.Text = "Sınav Notları";
             this.btnSinavNotlari.UseVisualStyleBackColor = false;
+            this.btnSinavNotlari.Click += new System.EventHandler(this.btnSinavNotlari_Click);
             // 
             // pictureBox3
             // 
@@ -165,6 +166,7 @@
             this.btnOgrenciIslemleri.TabIndex = 3;
             this.btnOgrenciIslemleri.Text = "Öğrenci İşlemleri";
             this.btnOgrenciIslemleri.UseVisualStyleBackColor = false;
+            this.btnOgrenciIslemleri.Click += new System.EventHandler(this.btnOgrenciIslemleri_Click);
             // 
             // btnCikis
             // 
