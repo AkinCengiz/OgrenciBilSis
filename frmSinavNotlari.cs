@@ -61,13 +61,15 @@ namespace OgrenciBilSis
             dataGridView1.DataSource = dtNotlar.NotlariGetir(int.Parse(cmbOgrenci.SelectedValue.ToString()));
         }
 
+        private int NotId;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            NotId = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
             cmbDers.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             cmbOgrenci.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtSınav1.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtSınav2.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtSınav3.Text= dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txtSınav3.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             txtProje.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
             txtOrtalama.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
             txtDurum.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
@@ -83,7 +85,11 @@ namespace OgrenciBilSis
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-           // dtNotlar.NotGuncelle(byte.Parse(cmbDers.SelectedValue.ToString()),)
+            dtNotlar.NotGuncelle(byte.Parse(cmbDers.SelectedValue.ToString()),
+                int.Parse(cmbOgrenci.SelectedValue.ToString()), byte.Parse(txtSınav1.Text), byte.Parse(txtSınav2.Text),
+                byte.Parse(txtSınav3.Text), byte.Parse(txtProje.Text), decimal.Parse(txtOrtalama.Text),
+                (txtDurum.Text == "1") ? true : false, NotId);
+            TumNotlariGetir(dsAdapter);
         }
     }
 }
