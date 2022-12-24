@@ -78,9 +78,10 @@ namespace OgrenciBilSis
 
         private void btnHesapla_Click(object sender, EventArgs e)
         {
-            txtOrtalama.Text = ((Convert.ToInt16(txtSınav1.Text) + Convert.ToInt16(txtSınav2.Text) +
-                                 Convert.ToInt16(txtSınav3.Text) + Convert.ToInt16(txtProje.Text)) / 4).ToString();
-            txtDurum.Text = (Convert.ToInt16(txtOrtalama.Text) > 60) ? "1" : "0";
+
+            txtOrtalama.Text = ((Convert.ToDecimal(txtSınav1.Text) + Convert.ToDecimal(txtSınav2.Text) +
+                                 Convert.ToDecimal(txtSınav3.Text) + Convert.ToDecimal(txtProje.Text)) / 4).ToString();
+            txtDurum.Text = (Convert.ToDecimal(txtOrtalama.Text) > 60) ? "1" : "0";
         }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
